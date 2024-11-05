@@ -6,6 +6,13 @@
 The D20 decoder is a double sided mobile decoder with NEM 651 connector. The decoder is designed to integrate into the [RTB](https://rtb4dcc.de/concept/) digital control infrastructure.
 
 <details>
+<summary>See also</summary>
+
+- [RTB_D16](https://github.com/git4dcc/RTB_D16)
+
+</details>
+
+<details>
 <summary>User Guides</summary>
 
 - User Guide - DE
@@ -85,7 +92,6 @@ Example: **D20F0001**.hex
 
 # YouTube
 Some YouTubes to see the D22 decoder in action.<br><br>
-[<img src="https://img.youtube.com/vi/xgu4DMY3AJU/0.jpg" width=260>](https://youtu.be/xgu4DMY3AJU)
 [<img src="https://img.youtube.com/vi/aH7pGpX5ZGo/0.jpg" width=260>](https://youtu.be/aH7pGpX5ZGo)
 [<img src="https://img.youtube.com/vi/Ebl8b5DK1Gw/0.jpg" width=260>](https://youtu.be/Ebl8b5DK1Gw)
 
