@@ -78,13 +78,13 @@ Example: **D20F0001**.hex
 # Images
 | top | bottom |
 | --- | --- |
-| <img src="supplemental/images/D20_top_connect.jpg" width=330> | <img src="supplemental/images/D20_btm_connect.jpg" width=330> |
+| <img src="supplemental/images/D20_top_connect.jpg" width=330> | <img src="supplemental/images/D20_btm_connect.jpg" width=400> |
 
 
 
 
 # YouTube
-Some short videos to see the D16 decoder in action.<br><br>
+Some YouTubes to see the D22 decoder in action.<br><br>
 [<img src="https://img.youtube.com/vi/xgu4DMY3AJU/0.jpg" width=260>](https://youtu.be/xgu4DMY3AJU)
 [<img src="https://img.youtube.com/vi/aH7pGpX5ZGo/0.jpg" width=260>](https://youtu.be/aH7pGpX5ZGo)
 [<img src="https://img.youtube.com/vi/Ebl8b5DK1Gw/0.jpg" width=260>](https://youtu.be/Ebl8b5DK1Gw)
