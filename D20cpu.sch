@@ -5,11 +5,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "RTB D20 NEM651 Decoder"
-Date "2024-11-05"
-Rev "0"
+Date "2024-11-13"
+Rev "1"
 Comp "Frank Schumacher"
 Comment1 "Double sided NEM651"
-Comment2 "D20.0"
+Comment2 "D20.1"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -18,39 +18,39 @@ CPU
 $Comp
 L power:+3V3 #PWR0102
 U 1 1 5F7ECBE1
-P 3100 2500
-F 0 "#PWR0102" H 3100 2350 50  0001 C CNN
-F 1 "+3V3" V 3115 2673 50  0000 C CNN
-F 2 "" H 3100 2500 50  0001 C CNN
-F 3 "" H 3100 2500 50  0001 C CNN
-	1    3100 2500
+P 2850 1550
+F 0 "#PWR0102" H 2850 1400 50  0001 C CNN
+F 1 "+3V3" V 2865 1723 50  0000 C CNN
+F 2 "" H 2850 1550 50  0001 C CNN
+F 3 "" H 2850 1550 50  0001 C CNN
+	1    2850 1550
 	1    0    0    -1  
 $EndComp
 Text GLabel 7750 5050 0    50   BiDi ~ 0
 UPDI
 Wire Wire Line
 	7750 5050 7850 5050
-Text GLabel 7850 3950 0    50   Input ~ 0
+Text GLabel 8250 3950 0    50   Input ~ 0
 DCC-b
-Text GLabel 7850 3850 0    50   Input ~ 0
+Text GLabel 8250 3850 0    50   Input ~ 0
 DCC-a
-Text GLabel 7850 4050 0    50   Output ~ 0
+Text GLabel 8250 4050 0    50   Output ~ 0
 M1
-Text GLabel 7850 4150 0    50   Output ~ 0
+Text GLabel 8250 4150 0    50   Output ~ 0
 M2
-Text GLabel 7850 3750 0    50   Output ~ 0
+Text GLabel 8250 3750 0    50   Output ~ 0
 Lr
-Text GLabel 7850 3650 0    50   Output ~ 0
+Text GLabel 8250 3650 0    50   Output ~ 0
 Lf
 $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 61F9696E
-P 8050 3950
-F 0 "J1" H 8130 3942 50  0001 L CNN
-F 1 "NEM651" H 8130 3851 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Horizontal" H 8050 3950 50  0001 C CNN
-F 3 "~" H 8050 3950 50  0001 C CNN
-	1    8050 3950
+P 8450 3950
+F 0 "J1" H 8530 3942 50  0001 L CNN
+F 1 "NEM651" H 8530 3851 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Horizontal" H 8450 3950 50  0001 C CNN
+F 3 "~" H 8450 3950 50  0001 C CNN
+	1    8450 3950
 	1    0    0    1   
 $EndComp
 Wire Notes Line
@@ -135,198 +135,196 @@ Wire Wire Line
 Wire Wire Line
 	7850 2750 8400 2750
 Wire Wire Line
-	4050 4000 3800 4000
+	3800 3050 3550 3050
 $Comp
 L power:+3V3 #PWR0110
 U 1 1 66E65456
-P 4050 4000
-F 0 "#PWR0110" H 4050 3850 50  0001 C CNN
-F 1 "+3V3" V 4050 4250 50  0000 C CNN
-F 2 "" H 4050 4000 50  0001 C CNN
-F 3 "" H 4050 4000 50  0001 C CNN
-	1    4050 4000
+P 3800 3050
+F 0 "#PWR0110" H 3800 2900 50  0001 C CNN
+F 1 "+3V3" V 3800 3300 50  0000 C CNN
+F 2 "" H 3800 3050 50  0001 C CNN
+F 3 "" H 3800 3050 50  0001 C CNN
+	1    3800 3050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3800 3900 4050 3900
+	3550 2950 3800 2950
 Wire Wire Line
-	2800 2600 2800 2500
+	2550 1650 2550 1550
 Wire Wire Line
-	2900 2600 2900 2500
+	2650 1650 2650 1550
 Wire Wire Line
-	3300 5000 3300 5100
+	3050 4050 3050 4150
 Wire Wire Line
-	3200 2500 3200 2600
+	2950 1550 2950 1650
 $Comp
 L RTB:AVR64DD28-I_STX IC1
 U 1 1 66E4AC0B
-P 2200 3700
-F 0 "IC1" H 2700 3750 50  0000 L CNN
-F 1 "AVR64DD28-I_STX" H 2700 3850 50  0000 L CNN
-F 2 "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.4mm_EP2.3x2.3mm" H 3650 4600 50  0001 L CNN
-F 3 "https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR64DD32-28-Prelim-DataSheet-DS40002315B.pdf" H 3650 4500 50  0001 L CNN
-F 4 "8-bit Microcontrollers - MCU 64KB, 8KB RAM, 28p, 24MHz, MVIO, 12b ADC, ZCD, DAC, 2xUART, SPI, TWI" H 3650 4400 50  0001 L CNN "Description"
-F 5 "1" H 3650 4300 50  0001 L CNN "Height"
-F 6 "494-AVR64DD28-I/STX" H 3650 4200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/AVR64DD28-I-STX?qs=tlsG%2FOw5FFjDVF9O6As67Q%3D%3D" H 3650 4100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Microchip" H 3650 4000 50  0001 L CNN "Manufacturer_Name"
-F 9 "AVR64DD28-I/STX" H 3650 3900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2200 3700
+P 1950 2750
+F 0 "IC1" H 2450 2800 50  0000 L CNN
+F 1 "AVR64DD28-I_STX" H 2450 2900 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_4x4mm_P0.4mm_EP2.3x2.3mm" H 3400 3650 50  0001 L CNN
+F 3 "https://ww1.microchip.com/downloads/aemDocuments/documents/MCU08/ProductDocuments/DataSheets/AVR64DD32-28-Prelim-DataSheet-DS40002315B.pdf" H 3400 3550 50  0001 L CNN
+F 4 "8-bit Microcontrollers - MCU 64KB, 8KB RAM, 28p, 24MHz, MVIO, 12b ADC, ZCD, DAC, 2xUART, SPI, TWI" H 3400 3450 50  0001 L CNN "Description"
+F 5 "1" H 3400 3350 50  0001 L CNN "Height"
+F 6 "494-AVR64DD28-I/STX" H 3400 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/AVR64DD28-I-STX?qs=tlsG%2FOw5FFjDVF9O6As67Q%3D%3D" H 3400 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 3400 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "AVR64DD28-I/STX" H 3400 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1950 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 4300 3800 4300
-Text GLabel 4050 4200 2    50   Output ~ 0
+	3800 3350 3550 3350
+Text GLabel 3800 3250 2    50   Output ~ 0
 Vref
-Text GLabel 1950 3700 0    50   Output ~ 0
+Text GLabel 1700 2750 0    50   Output ~ 0
 F0r
-Text GLabel 2700 2500 1    50   Output ~ 0
+Text GLabel 2450 1550 1    50   Output ~ 0
 F0f
-Text GLabel 1950 4300 0    50   Output ~ 0
+Text GLabel 1700 3350 0    50   Output ~ 0
 RCM.tx
 Wire Wire Line
-	2200 3700 1950 3700
+	1950 2750 1700 2750
 Wire Wire Line
-	3800 4200 4050 4200
+	3550 3250 3800 3250
 Wire Wire Line
-	1950 4300 2200 4300
-Text GLabel 3300 5100 3    50   Input ~ 0
+	1700 3350 1950 3350
+Text GLabel 3050 4150 3    50   Input ~ 0
 UDCC-b
 Wire Wire Line
-	2700 2600 2700 2500
+	2450 1650 2450 1550
 $Comp
 L Device:R R2
 U 1 1 5F9A6929
-P 3950 4100
-F 0 "R2" H 4020 4146 50  0001 L CNN
-F 1 "68k" V 3950 4050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3880 4100 50  0001 C CNN
-F 3 "~" H 3950 4100 50  0001 C CNN
-	1    3950 4100
+P 2700 5100
+F 0 "R2" H 2770 5146 50  0001 L CNN
+F 1 "68k" V 2700 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2630 5100 50  0001 C CNN
+F 3 "~" H 2700 5100 50  0001 C CNN
+	1    2700 5100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3100 5000 3100 5100
+	2850 4050 2850 4150
 Wire Wire Line
-	3000 5100 3000 5000
-Text GLabel 3100 5100 3    50   Input ~ 0
+	2750 4150 2750 4050
+Text GLabel 2850 4150 3    50   Input ~ 0
 uSENS2
-Text GLabel 3000 5100 3    50   Input ~ 0
+Text GLabel 2750 4150 3    50   Input ~ 0
 uSENS1
 Wire Wire Line
-	3200 5000 3200 5100
-Text GLabel 4050 4300 2    50   Input ~ 0
+	2950 4050 2950 4150
+Text GLabel 3800 3350 2    50   Input ~ 0
 ISENS
 Wire Wire Line
-	2200 3900 1950 3900
-Text GLabel 1950 3800 0    50   Output ~ 0
+	1950 2950 1700 2950
+Text GLabel 1700 2850 0    50   Output ~ 0
 PWM1
-Text GLabel 1950 3900 0    50   Output ~ 0
+Text GLabel 1700 2950 0    50   Output ~ 0
 PWM2
-Text GLabel 2700 5350 3    50   Input ~ 0
+Text GLabel 3000 5200 2    50   Input ~ 0
 DCC-a
-Text GLabel 4150 4100 2    50   Input ~ 0
+Text GLabel 3000 5100 2    50   Input ~ 0
 DCC-b
-Text GLabel 3200 5100 3    50   Input ~ 0
+Text GLabel 2950 4150 3    50   Input ~ 0
 UDCC-a
-Wire Wire Line
-	4150 4100 4100 4100
 $Comp
 L power:GND #PWR0111
 U 1 1 5FCC6BA0
-P 4050 3900
-F 0 "#PWR0111" H 4050 3650 50  0001 C CNN
-F 1 "GND" V 4050 3700 50  0000 C CNN
-F 2 "" H 4050 3900 50  0001 C CNN
-F 3 "" H 4050 3900 50  0001 C CNN
-	1    4050 3900
+P 3800 2950
+F 0 "#PWR0111" H 3800 2700 50  0001 C CNN
+F 1 "GND" V 3800 2750 50  0000 C CNN
+F 2 "" H 3800 2950 50  0001 C CNN
+F 3 "" H 3800 2950 50  0001 C CNN
+	1    3800 2950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3200 2500 1    50   BiDi ~ 0
+Text GLabel 2950 1550 1    50   BiDi ~ 0
 UPDI
 Wire Wire Line
-	1950 3800 2200 3800
+	1700 2850 1950 2850
 Wire Wire Line
-	2700 5350 2700 5300
+	3000 5200 2850 5200
 $Comp
 L Device:R R1
 U 1 1 5F9A60D1
-P 2700 5150
-F 0 "R1" H 2770 5196 50  0001 L CNN
-F 1 "68k" V 2700 5050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2630 5150 50  0001 C CNN
-F 3 "~" H 2700 5150 50  0001 C CNN
-	1    2700 5150
-	-1   0    0    1   
+P 2700 5200
+F 0 "R1" H 2770 5246 50  0001 L CNN
+F 1 "68k" V 2700 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2630 5200 50  0001 C CNN
+F 3 "~" H 2700 5200 50  0001 C CNN
+	1    2700 5200
+	0    1    1    0   
 $EndComp
-Text Notes 1050 4300 0    50   ~ 0
+Text Notes 1050 3400 0    50   ~ 0
 COM-1
-Text GLabel 4050 3800 2    50   Output ~ 0
+Text GLabel 3800 2850 2    50   Output ~ 0
 LED.hbt
 Wire Wire Line
-	3800 3800 4050 3800
+	3550 2850 3800 2850
 Wire Wire Line
-	3100 2500 3100 2600
+	2850 1550 2850 1650
 $Comp
 L power:GND #PWR0101
 U 1 1 66E8D24C
-P 3000 2500
-F 0 "#PWR0101" H 3000 2250 50  0001 C CNN
-F 1 "GND" V 3000 2300 50  0000 C CNN
-F 2 "" H 3000 2500 50  0001 C CNN
-F 3 "" H 3000 2500 50  0001 C CNN
-	1    3000 2500
+P 2750 1550
+F 0 "#PWR0101" H 2750 1300 50  0001 C CNN
+F 1 "GND" V 2750 1350 50  0000 C CNN
+F 2 "" H 2750 1550 50  0001 C CNN
+F 3 "" H 2750 1550 50  0001 C CNN
+	1    2750 1550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3000 2500 3000 2600
+	2750 1550 2750 1650
 $Comp
 L power:GND #PWR0117
 U 1 1 66EA99F1
-P 2600 2500
-F 0 "#PWR0117" H 2600 2250 50  0001 C CNN
-F 1 "GND" V 2600 2300 50  0000 C CNN
-F 2 "" H 2600 2500 50  0001 C CNN
-F 3 "" H 2600 2500 50  0001 C CNN
-	1    2600 2500
+P 2350 1550
+F 0 "#PWR0117" H 2350 1300 50  0001 C CNN
+F 1 "GND" V 2350 1350 50  0000 C CNN
+F 2 "" H 2350 1550 50  0001 C CNN
+F 3 "" H 2350 1550 50  0001 C CNN
+	1    2350 1550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2600 2500 2600 2600
+	2350 1550 2350 1650
 $Comp
 L power:+3V3 #PWR0106
 U 1 1 66E49280
-P 2900 5000
-F 0 "#PWR0106" H 2900 4850 50  0001 C CNN
-F 1 "+3V3" V 2900 5250 50  0000 C CNN
-F 2 "" H 2900 5000 50  0001 C CNN
-F 3 "" H 2900 5000 50  0001 C CNN
-	1    2900 5000
+P 2650 4050
+F 0 "#PWR0106" H 2650 3900 50  0001 C CNN
+F 1 "+3V3" V 2650 4300 50  0000 C CNN
+F 2 "" H 2650 4050 50  0001 C CNN
+F 3 "" H 2650 4050 50  0001 C CNN
+	1    2650 4050
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 66E71AF3
-P 6950 3750
-F 0 "J3" H 7030 3742 50  0001 L CNN
-F 1 "NEM651" H 7030 3651 50  0000 L CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Horizontal" H 6950 3750 50  0001 C CNN
-F 3 "~" H 6950 3750 50  0001 C CNN
-	1    6950 3750
+P 7350 3750
+F 0 "J3" H 7430 3742 50  0001 L CNN
+F 1 "NEM651" H 7430 3651 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Horizontal" H 7350 3750 50  0001 C CNN
+F 3 "~" H 7350 3750 50  0001 C CNN
+	1    7350 3750
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0118
 U 1 1 66E72E42
-P 6750 3750
-F 0 "#PWR0118" H 6750 3500 50  0001 C CNN
-F 1 "GND" V 6750 3550 50  0000 C CNN
-F 2 "" H 6750 3750 50  0001 C CNN
-F 3 "" H 6750 3750 50  0001 C CNN
-	1    6750 3750
+P 7150 3750
+F 0 "#PWR0118" H 7150 3500 50  0001 C CNN
+F 1 "GND" V 7150 3550 50  0000 C CNN
+F 2 "" H 7150 3750 50  0001 C CNN
+F 3 "" H 7150 3750 50  0001 C CNN
+	1    7150 3750
 	0    1    1    0   
 $EndComp
-Text GLabel 6750 3650 0    50   Input ~ 0
+Text GLabel 7150 3650 0    50   Input ~ 0
 VHBR
 $Comp
 L Connector_Generic:Conn_01x01 J4
@@ -368,32 +366,32 @@ AUX2
 $Comp
 L Connector_Generic:Conn_01x01 J9
 U 1 1 66E8AFE9
-P 8050 5450
-F 0 "J9" H 8130 5492 50  0000 L CNN
-F 1 "Conn_01x01" H 8130 5401 50  0000 L CNN
-F 2 "RTB:DummyNet-Connector" H 8050 5450 50  0001 C CNN
-F 3 "~" H 8050 5450 50  0001 C CNN
-	1    8050 5450
+P 8050 5350
+F 0 "J9" H 8130 5392 50  0000 L CNN
+F 1 "Conn_01x01" H 8130 5301 50  0000 L CNN
+F 2 "RTB:DummyNet-Connector" H 8050 5350 50  0001 C CNN
+F 3 "~" H 8050 5350 50  0001 C CNN
+	1    8050 5350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 66E8BECC
-P 7850 5450
-F 0 "#PWR0104" H 7850 5200 50  0001 C CNN
-F 1 "GND" V 7850 5250 50  0000 C CNN
-F 2 "" H 7850 5450 50  0001 C CNN
-F 3 "" H 7850 5450 50  0001 C CNN
-	1    7850 5450
+P 7850 5350
+F 0 "#PWR0104" H 7850 5100 50  0001 C CNN
+F 1 "GND" V 7850 5150 50  0000 C CNN
+F 2 "" H 7850 5350 50  0001 C CNN
+F 3 "" H 7850 5350 50  0001 C CNN
+	1    7850 5350
 	0    1    1    0   
 $EndComp
-Text GLabel 2800 5100 3    50   Input ~ 0
+Text GLabel 2550 4150 3    50   Input ~ 0
 aSENSE
 Wire Wire Line
-	2800 5000 2800 5100
-Text GLabel 2900 2500 1    50   Output ~ 0
+	2550 4050 2550 4150
+Text GLabel 2650 1550 1    50   Output ~ 0
 AUX2
-Text GLabel 2800 2500 1    50   Output ~ 0
+Text GLabel 2550 1550 1    50   Output ~ 0
 AUX1
 $Comp
 L Connector_Generic:Conn_01x01 J8
@@ -408,18 +406,18 @@ F 3 "~" H 8150 1700 50  0001 C CNN
 $EndComp
 Text GLabel 7950 1700 0    50   Output ~ 0
 AUX3
-NoConn ~ 2200 4200
-NoConn ~ 3300 2600
+NoConn ~ 1950 3250
+NoConn ~ 3050 1650
 Wire Wire Line
-	2200 4100 2050 4100
+	1950 3150 1800 3150
 Wire Wire Line
-	2050 4100 2050 4000
+	1800 3150 1800 3050
 Wire Wire Line
-	2050 4000 2200 4000
+	1800 3050 1950 3050
 Wire Wire Line
-	2050 4000 1950 4000
-Connection ~ 2050 4000
-Text GLabel 1950 4000 0    50   Output ~ 0
+	1800 3050 1700 3050
+Connection ~ 1800 3050
+Text GLabel 1700 3050 0    50   Output ~ 0
 AUX3
 $Comp
 L Connector_Generic:Conn_01x01 J7
@@ -448,8 +446,8 @@ P1
 Text GLabel 7950 2300 0    50   Output ~ 0
 P2
 Wire Wire Line
-	3800 3700 4050 3700
-Text GLabel 4050 3700 2    50   Output ~ 0
+	3550 2750 3800 2750
+Text GLabel 3800 2750 2    50   Output ~ 0
 AUX4
 $Comp
 L Connector_Generic:Conn_01x01 J10
@@ -464,4 +462,86 @@ F 3 "~" H 8150 1900 50  0001 C CNN
 $EndComp
 Text GLabel 7950 1900 0    50   Output ~ 0
 AUX4
+Wire Wire Line
+	2850 5100 3000 5100
+Text GLabel 2450 5100 0    50   Input ~ 0
+DCC-b'
+Wire Wire Line
+	2450 5100 2500 5100
+Text GLabel 3800 3150 2    50   Input ~ 0
+DCC-b'
+Wire Wire Line
+	3550 3150 3800 3150
+Wire Wire Line
+	2500 5100 2500 4950
+Wire Wire Line
+	2500 4950 2600 4950
+Connection ~ 2500 5100
+Wire Wire Line
+	2500 5100 2550 5100
+$Comp
+L Device:D_Schottky D3
+U 1 1 67310082
+P 2750 4950
+F 0 "D3" H 2750 4733 50  0000 C CNN
+F 1 "BAT30F4" H 2750 4824 50  0000 C CNN
+F 2 "RTB:BAT30F4" H 2750 4950 50  0001 C CNN
+F 3 "~" H 2750 4950 50  0001 C CNN
+	1    2750 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 673118BB
+P 3000 4950
+F 0 "#PWR0103" H 3000 4800 50  0001 C CNN
+F 1 "+3V3" V 3000 5200 50  0000 C CNN
+F 2 "" H 3000 4950 50  0001 C CNN
+F 3 "" H 3000 4950 50  0001 C CNN
+	1    3000 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 4950 3000 4950
+Text GLabel 2450 5200 0    50   Input ~ 0
+DCC-a'
+Wire Wire Line
+	2450 5200 2500 5200
+Text GLabel 2450 4150 3    50   Input ~ 0
+DCC-a'
+Wire Wire Line
+	2450 4150 2450 4050
+$Comp
+L Device:D_Schottky D4
+U 1 1 6731C0F0
+P 2750 5350
+F 0 "D4" H 2750 5600 50  0000 C CNN
+F 1 "BAT30F4" H 2750 5500 50  0000 C CNN
+F 2 "RTB:BAT30F4" H 2750 5350 50  0001 C CNN
+F 3 "~" H 2750 5350 50  0001 C CNN
+	1    2750 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 5200 2500 5350
+Wire Wire Line
+	2500 5350 2600 5350
+Connection ~ 2500 5200
+Wire Wire Line
+	2500 5200 2550 5200
+Wire Wire Line
+	2900 5350 3000 5350
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 6731DEE9
+P 3000 5350
+F 0 "#PWR0108" H 3000 5200 50  0001 C CNN
+F 1 "+3V3" V 3000 5600 50  0000 C CNN
+F 2 "" H 3000 5350 50  0001 C CNN
+F 3 "" H 3000 5350 50  0001 C CNN
+	1    3000 5350
+	0    1    1    0   
+$EndComp
+Text Notes 1050 4950 0    50   ~ 0
+Clamping required for PD7
 $EndSCHEMATC
