@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title "RTB D20 NEM651 Decoder"
-Date "2024-11-13"
+Date "2024-11-15"
 Rev "1"
 Comp "Frank Schumacher"
 Comment1 "Double sided NEM651"
 Comment2 "D20.1"
 Comment3 ""
-Comment4 ""
+Comment4 "Licensed under the Apache License, Version 2"
 $EndDescr
 $Sheet
 S 3100 3250 1750 750 

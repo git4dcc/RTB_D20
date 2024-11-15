@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
 Title "RTB D20 NEM651 Decoder"
-Date "2024-11-13"
+Date "2024-11-15"
 Rev "1"
 Comp "Frank Schumacher"
 Comment1 "Double sided NEM651"
 Comment2 "D20.1"
 Comment3 ""
-Comment4 ""
+Comment4 "Licensed under the Apache License, Version 2"
 $EndDescr
 Text Notes 750  800  0    118  ~ 0
 CPU
@@ -46,8 +46,8 @@ $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 61F9696E
 P 8450 3950
-F 0 "J1" H 8530 3942 50  0001 L CNN
-F 1 "NEM651" H 8530 3851 50  0000 L CNN
+F 0 "J1" H 8530 3942 50  0000 L CNN
+F 1 "NEM651" H 8550 3850 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Horizontal" H 8450 3950 50  0001 C CNN
 F 3 "~" H 8450 3950 50  0001 C CNN
 	1    8450 3950
@@ -85,13 +85,13 @@ Wire Notes Line
 	9500 5750 6350 5750
 Wire Notes Line
 	6350 5750 6350 4650
-Text Notes 6400 4800 0    50   ~ 0
+Text Notes 6400 4800 0    50   ~ 10
 UPDI
-Text Notes 6400 3450 0    50   ~ 0
-NEM651
-Text Notes 6400 1250 0    50   ~ 0
+Text Notes 6400 3450 0    50   ~ 10
+Connectors
+Text Notes 6400 1250 0    50   ~ 10
 LEDs
-Text Notes 1000 1250 0    50   ~ 0
+Text Notes 1000 1250 0    50   ~ 10
 CPU
 Wire Wire Line
 	8700 2750 8900 2750
@@ -110,7 +110,7 @@ $Comp
 L Device:LED D1
 U 1 1 61FBE66E
 P 7700 2750
-F 0 "D1" H 7693 2495 50  0001 C CNN
+F 0 "D1" H 7700 2900 50  0000 C CNN
 F 1 "LED" H 7693 2586 50  0000 C CNN
 F 2 "LED_SMD:LED_0402_1005Metric" H 7700 2750 50  0001 C CNN
 F 3 "~" H 7700 2750 50  0001 C CNN
@@ -121,8 +121,8 @@ $Comp
 L Device:R R3
 U 1 1 61F3C5B5
 P 8550 2750
-F 0 "R3" H 8620 2796 50  0001 L CNN
-F 1 "3.3k" V 8650 2650 50  0000 L CNN
+F 0 "R3" V 8450 2700 50  0000 L CNN
+F 1 "3.3k" V 8550 2650 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8480 2750 50  0001 C CNN
 F 3 "~" H 8550 2750 50  0001 C CNN
 	1    8550 2750
@@ -198,8 +198,8 @@ $Comp
 L Device:R R2
 U 1 1 5F9A6929
 P 2700 5100
-F 0 "R2" H 2770 5146 50  0001 L CNN
-F 1 "68k" V 2700 5050 50  0000 L CNN
+F 0 "R2" V 2650 4850 50  0000 L CNN
+F 1 "33k" V 2700 5050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2630 5100 50  0001 C CNN
 F 3 "~" H 2700 5100 50  0001 C CNN
 	1    2700 5100
@@ -250,8 +250,8 @@ $Comp
 L Device:R R1
 U 1 1 5F9A60D1
 P 2700 5200
-F 0 "R1" H 2770 5246 50  0001 L CNN
-F 1 "68k" V 2700 5150 50  0000 L CNN
+F 0 "R1" V 2750 4950 50  0000 L CNN
+F 1 "33k" V 2700 5150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2630 5200 50  0001 C CNN
 F 3 "~" H 2700 5200 50  0001 C CNN
 	1    2700 5200
@@ -306,8 +306,8 @@ $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 66E71AF3
 P 7350 3750
-F 0 "J3" H 7430 3742 50  0001 L CNN
-F 1 "NEM651" H 7430 3651 50  0000 L CNN
+F 0 "J3" H 7430 3742 50  0000 L CNN
+F 1 "Capacitor" H 7450 3650 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Horizontal" H 7350 3750 50  0001 C CNN
 F 3 "~" H 7350 3750 50  0001 C CNN
 	1    7350 3750
@@ -353,7 +353,7 @@ L Connector_Generic:Conn_01x01 J2
 U 1 1 66E82EC1
 P 8050 5050
 F 0 "J2" H 8130 5092 50  0000 L CNN
-F 1 "Conn_01x01" H 8130 5001 50  0000 L CNN
+F 1 "pad" H 8130 5001 50  0000 L CNN
 F 2 "RTB:DummyNet-Connector" H 8050 5050 50  0001 C CNN
 F 3 "~" H 8050 5050 50  0001 C CNN
 	1    8050 5050
@@ -368,7 +368,7 @@ L Connector_Generic:Conn_01x01 J9
 U 1 1 66E8AFE9
 P 8050 5350
 F 0 "J9" H 8130 5392 50  0000 L CNN
-F 1 "Conn_01x01" H 8130 5301 50  0000 L CNN
+F 1 "pad" H 8130 5301 50  0000 L CNN
 F 2 "RTB:DummyNet-Connector" H 8050 5350 50  0001 C CNN
 F 3 "~" H 8050 5350 50  0001 C CNN
 	1    8050 5350
@@ -464,21 +464,21 @@ Text GLabel 7950 1900 0    50   Output ~ 0
 AUX4
 Wire Wire Line
 	2850 5100 3000 5100
-Text GLabel 2450 5100 0    50   Input ~ 0
+Text GLabel 2300 5100 0    50   Input ~ 0
 DCC-b'
 Wire Wire Line
-	2450 5100 2500 5100
+	2300 5100 2400 5100
 Text GLabel 3800 3150 2    50   Input ~ 0
 DCC-b'
 Wire Wire Line
 	3550 3150 3800 3150
 Wire Wire Line
-	2500 5100 2500 4950
+	2400 5100 2400 4950
 Wire Wire Line
-	2500 4950 2600 4950
-Connection ~ 2500 5100
+	2400 4950 2600 4950
+Connection ~ 2400 5100
 Wire Wire Line
-	2500 5100 2550 5100
+	2400 5100 2550 5100
 $Comp
 L Device:D_Schottky D3
 U 1 1 67310082
@@ -503,10 +503,10 @@ F 3 "" H 3000 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 4950 3000 4950
-Text GLabel 2450 5200 0    50   Input ~ 0
+Text GLabel 2300 5200 0    50   Input ~ 0
 DCC-a'
 Wire Wire Line
-	2450 5200 2500 5200
+	2300 5200 2400 5200
 Text GLabel 2450 4150 3    50   Input ~ 0
 DCC-a'
 Wire Wire Line
@@ -523,12 +523,12 @@ F 3 "~" H 2750 5350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2500 5200 2500 5350
+	2400 5200 2400 5350
 Wire Wire Line
-	2500 5350 2600 5350
-Connection ~ 2500 5200
+	2400 5350 2600 5350
+Connection ~ 2400 5200
 Wire Wire Line
-	2500 5200 2550 5200
+	2400 5200 2550 5200
 Wire Wire Line
 	2900 5350 3000 5350
 $Comp
