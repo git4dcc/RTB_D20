@@ -9,6 +9,7 @@ The D20 decoder is a double sided mobile decoder with NEM 651 connector. The dec
 <summary>See also</summary>
 
 - [RTB_D16](https://github.com/git4dcc/RTB_D16)
+- [RTB_D21](https://github.com/git4dcc/RTB_D21)
 
 </details>
 
@@ -40,10 +41,10 @@ The decoder has the following features,
 - adjustable max motor current (default 300mA)
 - adjustable max AUX current (default 500mA)
 - over temp protection
-- Function output: LF/LR (dimmable headlights, 1.4kHz) limited to 250mA each
-- Function output: AUX1/AUX2 logic level and open drain (solder pads)
+- Function output: LF/LR (dimmable, 1.4kHz)
+- Function output: AUX1/AUX2 (dimmable, 1.4kHz) logic level and open drain (solder pads)
 - Function output: AUX3/AUX4 logic level (solder pads)
-- optional external buffer capacitor
+- optional external buffer capacitor (max. 1500uF)
 - <10mA idle power consumption
 - Firmware update over main tracks via DCC-R protocol
 
@@ -76,7 +77,7 @@ Example: **D20F0001**.hex
 
 |   | Description |
 | --- | --- |
-| **pcb** | Name of matching hardware (**D16**) |
+| **pcb** | Name of matching hardware (**D20**) |
 | **code** | Type of code contained (**R**=rom, **B**=bootloader, **F**=flash, **U**=bld update, **P**=UPDI factory code) |
 | **version** | Release version (**####**) |
 
@@ -91,7 +92,7 @@ Example: **D20F0001**.hex
 
 
 # YouTube
-Some YouTubes to see the D22 decoder in action.<br><br>
+Some YouTubes to see the D20 decoder in action.<br><br>
 [<img src="https://img.youtube.com/vi/aH7pGpX5ZGo/0.jpg" width=260>](https://youtu.be/aH7pGpX5ZGo)
 [<img src="https://img.youtube.com/vi/Ebl8b5DK1Gw/0.jpg" width=260>](https://youtu.be/Ebl8b5DK1Gw)
 
