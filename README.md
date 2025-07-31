@@ -89,6 +89,18 @@ Example: **D20F0001**.hex
 
 [Firmware files](firmware)
 
+## UPDI
+The fuse settings as well as the P-code (E15Pxxxx.hex) has to be installed by using UPDI.<br>
+
+<details>
+<summary>Details</summary>
+
+| Fuse Setting | P-code Install |
+| --- | --- |
+|<img src=supplemental/images/D20_updi_fuses.jpg width=500>|<img src=supplemental/images/D20_updi_memory.jpg width=500>|
+
+</details>
+
 # Images
 | top | bottom |
 | --- | --- |
